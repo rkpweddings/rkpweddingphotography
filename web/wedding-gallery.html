@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>wedding-gallery - RKP Photography</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fdfdfd, #f7f1f1);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .section__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1rem;
+  }
+
+  .section__header {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #222;
+    position: relative;
+  }
+
+  .section__header::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #db6a6a;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 5px;
+  }
+
+  .swiper {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.6s ease;
+}
+  .swiper-slide-active {
+    transform: scale(1.05);
+    opacity: 1;
+
+  }
+  .swiper-slide-visible {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+  .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide a img {
+    width: 100%;
+    max-width: 95%;
+    border-radius: 16px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease-in-out;
+    filter: brightness(0.95) contrast(1.05);
+    cursor: zoom-in;
+  }
+
+  .swiper-slide a img:hover {
+    transform: scale(1.05);
+    filter: brightness(1) contrast(1.1);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: #000000;
+    color: #fff;
+  }
+
+  .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #000000;
+  }
+  .back-home {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.back-home a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.back-home a:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+
+  /* Responsive header animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .section__header {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section__header {
+      font-size: 2rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <section class="section__container">
+    <h2 class="section__header">Wedding Gallery</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="/img/DSC08051.JPG" class="glightbox" data-gallery="wedding"><img src="/img/DSC08051.JPG" alt="Wedding 1"></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="/img/IMG_4428.JPG" class="glightbox" data-gallery="wedding"><img src="/img/IMG_4428.JPG" alt="Wedding 2"></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="/img/BRYL0086.JPG" class="glightbox" data-gallery="wedding"><img src="/img/BRYL0086.JPG" alt="Wedding 3"></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="/img/ABHI4857.JPG" class="glightbox" data-gallery="wedding"><img src="/img/ABHI4857.JPG" alt="Wedding 4"></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="/img/DSC09718.JPG" class="glightbox" data-gallery="wedding"><img src="/img/DSC09718.JPG" alt="Wedding 5"></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="/img/IMG_7022.JPG" class="glightbox" data-gallery="wedding"><img src="/img/IMG_7022.JPG" alt="Wedding 6"></a>
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="back-home">
+  <a href="/index.html">← Back to Home</a>
+</div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <script>
+    // Swiper initialization
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 30,
+      slidesPerView: 1,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+
+    // GLightbox initialization
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+    });
+    lightbox.on({
+  slideChangeTransitionEnd: function () {
+    const slides = document.querySelectorAll('.swiper-slide');
+    slides.forEach(slide => slide.classList.remove('swiper-slide-visible'));
+    const activeSlides = document.querySelectorAll('.swiper-slide-active, .swiper-slide-duplicate-active');
+    activeSlides.forEach(slide => slide.classList.add('swiper-slide-visible'));
+  }
+});
+
+  </script>
+</body>
+</html>
