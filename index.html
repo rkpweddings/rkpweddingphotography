@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>RKP Photography | Capturer</title>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#"><img src="/img/rkp logo without.png" alt="RKP Logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#service">SERVICES</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#book">BOOK NOW</a></li>
+          <li><a href="#location">LOCATION</a></li>
+          <li><a href="#location">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+<!-- About Section -->  
+    <div class="section__container about__container" id="about">
+      <h2 class="section__header">~ WE CAPTURE THE MOMENTS ~</h2>
+      <p class="section__description">
+        Welcome to RKP Wedding Photography Studio, owned and led by Prabin, where your special memories are our masterpiece. At RKP, we specialize in capturing the unforgettable moments of your wedding day — the emotions, the joy, the details — and preserving them forever.
+
+With a passion for storytelling through the lens, we transform your big day into a timeless visual journey. Whether it's the grand celebrations or the quiet candid glances, we ensure every memory is beautifully framed.
+
+Trust RKP to capture the heart of your wedding — one perfect shot at a time.
+      </p>
+      <p class="section__description">
+        Whether it’s a grand wedding celebration, a heartfelt portrait session, 
+        or a themed photoshoot, we offer a range of services including event 
+        photography, candid shoots, custom framing, album design, and more. 
+        At RKP Wedding Photography Studio, we are dedicated to capturing the 
+        true essence of your moments and presenting them as timeless keepsakes. 
+        Trust us to preserve your memories — beautifully framed, professionally 
+        edited, and forever cherished.
+      </p>
+      <img src="/img/rkp.png" alt="logo" />
+    </div>
+<!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="blob-bottom-left"></div>
+      <div class="blob-bottom-right"></div>
+      <div class="blob-top-left"></div>
+      <div class="blob-top-right"></div>
+    <div class="container service__container">
+    <h2 class="section__header">~ OUR SERVICES ~</h2>
+    <p class="section__description">Explore a variety of photography services tailored to your moments.</p>
+
+    <div class="services__grid">
+      <!-- Service Card 1 -->
+      <div class="service__card" data-service="wedding">
+        <div class="icon"><i class="ri-heart-fill"></i></div>
+        <h4>Wedding Photography</h4>
+        <p>Capturing your special day in timeless frames.</p>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service__card" data-service="portrait">
+        <div class="icon"><i class="ri-profile-line"></i></div>
+        <h4>Portrait Photography</h4>
+        <p>Personalized portraits with professional touch.</p>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service__card" data-service="babyshower">
+        <div class="icon"><i class="ri-bear-smile-line"></i></div>
+        <h4>Baby Shower Photography</h4>
+        <p>Joyful memories of new beginnings.</p>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service__card" data-service="framing">
+        <div class="icon"><i class="ri-camera-3-fill"></i></div>
+        <h4>Custom Framing & Editing</h4>
+        <p>Elegant photo framing and professional edits.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Pricing -->
+  <div class="modal__overlay" id="serviceModal">
+    <div class="modal__content">
+      <span class="modal__close">&times;</span>
+      <h3 id="modalTitle">Service Title</h3>
+      <p id="modalDescription">Service description and pricing will appear here.</p>
+      <ul id="modalPricing"></ul>
+    </div>
+  </div>
+</section>
+<!-- Portfolio Section -->
+<div class="section__container portfolio__container" id="portfolio">
+  <h2 class="section__header">~ PORTFOLIO ~</h2>
+  <div class="portfolio__grid">
+
+    <!-- Wedding -->
+    <div class="portfolio__card">
+      <img src="/img/ABHI4857.JPG" alt="Wedding Portfolio" />
+      <div class="portfolio__content">
+        <a href="/web/wedding-gallery.html" target="_blank">
+          <button class="btn">WEDDING PORTFOLIO</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Portraits -->
+    <div class="portfolio__card">
+      <img src="/img/DSC06858.JPG" alt="Portrait Portfolio" />
+      <div class="portfolio__content">
+        <a href="/web/portrait-gallery.html" target="_blank">
+          <button class="btn">PORTRAIT PORTFOLIO</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Baby Shower -->
+    <div class="portfolio__card">
+      <img src="/img/BRYL0086.JPG" alt="Baby Shower Portfolio" />
+      <div class="portfolio__content">
+        <a href="/web/babyshower-gallery.html" target="_blank">
+          <button class="btn">BABY SHOWER PORTFOLIO</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <section class="booking" id="book">
+  <h2 class="section__header">~ BOOK NOW ~</h2>
+  <p class="section__description">
+    Ready to capture your special moments? Fill out the form to book your session.
+  </p>
+
+<form id="bookingForm" class="booking__form">
+  <div class="form__group">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <input type="tel" name="Phone" placeholder="Phone Number" required>
+    <input type="text" name="Event Type" placeholder="Event Type (e.g., Wedding, Portrait)" required>
+    <input type="date" name="Event Date" required>
+    <textarea name="Message" placeholder="Message" rows="4" required></textarea>
+    <button type="submit" class="btn">SUBMIT</button>
+  </div>
+</form>
+
+<!-- ✅ Success Modal -->
+<div id="successModal" class="modal" style="display:none;">
+  <div class="modal-content" style="text-align:center;">
+    <h2>✅ Booking Successful</h2>
+    <p>Thank you! We'll get in touch with you shortly.</p>
+    <button onclick="document.getElementById('successModal').style.display='none'" class="btn">Close</button>
+  </div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="location" id="location">
+  <div class="container location__container">
+    <h2 class="section__header">~ LOCATION ~</h2>
+    <p class="section__description">Visit us at our studio or contact us directly.</p>
+
+    <div class="location__content">
+      <!-- Left: Map -->
+      <div class="location__map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.7424994032164!2d77.20360658842824!3d8.314723069850658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1752413282159!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="location__info">
+        <h3>Studio Details</h3>
+        <p><strong>📍 Address:</strong> RKP Photography Studio, 8673+VFX, Post, near Lekshmi Theatre Vincent Plaza, Kuzhithurai, Tamil Nadu 629163</p>
+        <p><strong>📞 Phone:</strong> <a href="tel:+919791811670">+91 9791811670</a></p>
+        <p><strong>📧 Email:</strong> <a href="mailto:rkpweddingphotography@gmail.com">rkpweddingphotography@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <img src="/img/Untitled-2a.jpg" alt="logo" />
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/rkp_wedding_photography/?utm_source=ig_web_button_share_sheet"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#book">BOOK NOW</a></li>
+            <li><a href="#location">LOCATION</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>STAY IN TOUCH</h4>
+          <p>
+            Keep up-to-date with all things Capturer! Join our community and never miss a moment!
+          </p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 RKP Photography. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
